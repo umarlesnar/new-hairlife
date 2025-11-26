@@ -1,4 +1,5 @@
 import { Users, Award, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Welcome() {
   const stats = [
@@ -26,16 +27,19 @@ export default function Welcome() {
               Such patches made of simulated hair look absolutely natural, fit you snugly, and match
               your countenance perfectly. Experience the transformation that thousands have trusted.
             </p>
-            <button className="mt-8 bg-[#202A5B] text-white px-8 py-3 rounded-md hover:bg-[#B78F59] transition-colors font-medium">
+            <Link 
+              to="/hair-fixing"
+              className="mt-8 inline-block bg-[#202A5B] text-white px-8 py-3 rounded-md hover:bg-[#B78F59] transition-colors font-medium"
+            >
               Discover More
-            </button>
+            </Link>
           </div>
 
           <div className="relative">
             <img
-              src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://media.istockphoto.com/id/1863833949/photo/hair-loss-concept.jpg?s=612x612&w=0&k=20&c=MyH0a37rWOQZHBqRWgD1AnSfklIHJtFyHKPwlcCFgeU="
               alt="Hair fixing result"
-              className="rounded-2xl shadow-2xl"
+              className="rounded-2xl shadow-2xl w-full object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
               <p className="text-4xl font-bold text-[#B78F59]">100%</p>

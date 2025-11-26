@@ -57,7 +57,7 @@ export default function Testimonials() {
                 <img
                   src={testimonial.before}
                   alt="Before"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
+                  className="w-full h-85 object-cover rounded-xl shadow-lg"
                 />
               </div>
               <div className="relative group">
@@ -67,7 +67,7 @@ export default function Testimonials() {
                 <img
                   src={testimonial.after}
                   alt="After"
-                  className="w-full h-80 object-cover rounded-xl shadow-lg"
+                  className="w-full h-85 object-cover top-20 rounded-xl shadow-lg"
                 />
               </div>
             </div>

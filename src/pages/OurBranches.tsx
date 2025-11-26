@@ -9,16 +9,10 @@ export default function OurBranches() {
       embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.755800969267!2d80.25734447507678!3d12.987464787329328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d33bfffee23%3A0xa921aa3d5e6e0087!2sNEW%20HAIR%20LIFE%20%2C%20THIRUVANMIYUR!5e0!3m2!1sen!2sin!4v1764075043310!5m2!1sen!2sin'
     },
     {
-      name: 'SALEM',
-      address: '2nd Floor, 5/3, Manivannan Rd, opp. to New Bus Stand Road, near Lena Photo Studio, Gokul Nagar, Swarnapuri, Salem.',
-      phone: '+91 99446 18228',
-      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.313493356802!2d78.13588538885494!3d11.672180500000021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf037e58d1963%3A0x9f7bb3714878630c!2sNew%20hair%20life!5e0!3m2!1sen!2sin!4v1764075161564!5m2!1sen!2sin'
-    },
-    {
-      name: 'HAIR FIXING AND BEAUTY LIFE',
+      name: 'MMDA ARUMBAKAM',
       address: '1st Floor, Girija Appartment, 50-FF2, Jawaharlal Nehru Salai, near MMDA, Signal, Chennai.',
       phone: '+91 95006 33506',
-      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124403.38775126298!2d80.08259119400851!3d12.997041915006962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526692eb60ce41%3A0xf50057b0b3581700!2sNEW%20HAIR%20LIFE%20HAIR%20FIXING%20AND%20BEAUTY%20LIFE!5e0!3m2!1sen!2sin!4v1764075241653!5m2!1sen!2sin'
+      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.5635795383587!2d80.20874717409778!3d13.063428087260462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266985e03f625%3A0x168050506f0e73f5!2sNew%20Hair%20Life%20MMDA%20arumbakkam!5e0!3m2!1sen!2sin!4v1764160316983!5m2!1sen!2sin'
     },
     {
       name: 'TAMBARAM',
@@ -27,16 +21,28 @@ export default function OurBranches() {
       embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.291052617151!2d80.10962167770995!3d12.9304895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f65157174c9%3A0x87b153538b006408!2sNEW%20HAIR%20LIFE%20HAIR%20FIXING!5e0!3m2!1sen!2sin!4v1764075471818!5m2!1sen!2sin'
     },
     {
+      name: 'SALEM',
+      address: '2nd Floor, 5/3, Manivannan Rd, opp. to New Bus Stand Road, near Lena Photo Studio, Gokul Nagar, Swarnapuri, Salem.',
+      phone: '+91 99446 18228',
+      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.313493356802!2d78.13588538885494!3d11.672180500000021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf037e58d1963%3A0x9f7bb3714878630c!2sNew%20hair%20life!5e0!3m2!1sen!2sin!4v1764075161564!5m2!1sen!2sin'
+    },
+    {
       name: 'PUDUCHERRY',
       address: 'Muthamizh Nagar Krishna Samy Building, Chennai silks road, near Krishna bakery, opposite New bus stand, Raja Nagar, Pudupalaiyam, Puducherry, 605013.',
       phone: '+91 99946 16236',
-      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998644.3732415761!2d79.8136706!3d11.932742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53615f40e3a26f%3A0x4a92f05829f2b4f8!2sNEW%20HAIR%20LIFE!5e0!3m2!1sen!2sin!4v1764080570462!5m2!1sen!2sin'
+      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6019878566362!2d79.81109737407472!3d11.932763088295223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53615f40e3a26f%3A0x4a92f05829f2b4f8!2sNEW%20HAIR%20LIFE!5e0!3m2!1sen!2sin!4v1764160407319!5m2!1sen!2sin'
     },
     {
       name: 'HOSUR',
       address: '2/30 1STfloor, susheela complex, opposite GRT, Bangalore By Pass Rd, above Sri gokulam paint, Hosur, Tamil Nadu 635109.',
       phone: '+91 97904 03033',
       embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.6765144579463!2d77.8300959!3d12.7345138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae70c5f158487d%3A0x38bcc7a4ac567d75!2sNEW%20HAIR%20LIFE%20HAIR%20FIXING%20AND%20BEAUTY%20CARE!5e0!3m2!1sen!2sin!4v1764086248230!5m2!1sen!2sin'
+    },
+    {
+      name: 'AVADI',
+      address: 'JSK Complex 43CV+5V4, Anna St, Gandhi Nagar, Avadi, Tamil Nadu 600054.',
+      phone: '+91 99947 60750',
+      embed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.75444500772!2d80.09477797749692!3d13.120302785657369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5289d4d01b653b%3A0x6e40f1e8746a931c!2sJSK%20Complex!5e0!3m2!1sen!2sin!4v1764159851756!5m2!1sen!2sin'
     }
   ];
 
@@ -51,7 +57,7 @@ export default function OurBranches() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {branches.map((branch, index) => (
-            <div key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div key={index} className="bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-xl overflow-hidden">
               {/* Map Section */}
               <div className="h-48 w-full bg-gray-100 relative">
                  <iframe

@@ -5,17 +5,17 @@ const slides = [
   {
     title: "The perfect solution to your embarrassment",
     subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
-    image: "https://images.pexels.com/photos/34890796/pexels-photo-34890796.jpeg"
+    image: "/hero/1.jpg"
   },
   {
     title: "Transform Your Appearance",
     subtitle: "Experience world-class non-surgical hair fixing technology.",
-    image: "https://www.tiege.com/cdn/shop/articles/adjusting-tie-in-mirror.jpg?v=1588038178"
+    image: "/hero/2.jpg"
   },
   {
     title: "Natural Looking Results",
     subtitle: "100% natural appearance with Canadian technology.",
-    image: "https://www.shutterstock.com/image-photo/back-view-male-head-before-260nw-1739791316.jpg"
+    image: "/hero/3.jpg"
   }
 ];
 

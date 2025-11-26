@@ -15,6 +15,7 @@ import VideoGallery from './pages/VideoGallery';
 import FAQ from './pages/FAQ';
 import OurBranches from './pages/OurBranches';
 import ContactUs from './pages/ContactUs';
+import HairFixing from './pages/HairFixing'; // Imported
 
 function Home() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/hair-fixing" element={<HairFixing />} /> {/* Added Route */}
           <Route path="/photo-gallery" element={<PhotoGallery />} />
           <Route path="/video-gallery" element={<VideoGallery />} />
           <Route path="/faq" element={<FAQ />} />

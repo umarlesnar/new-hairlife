@@ -8,16 +8,16 @@ export default function GlobalPresence() {
       address: 'NEW HAIR LIFE , 2nd floor, 68/53, Valmiki St, opp. Thiruvanmiyur Bus Stand Road, Kamaraj Nagar, Thiruvanmiyur, Chennai.' 
     },
     { 
-      name: 'Salem', 
-      address: 'New Hair Life, 2nd Floor, 5/3, Manivannan Rd, opp. to New Bus Stand Road, near Lena Photo Studio, Gokul Nagar, Swarnapuri, Salem.' 
-    },
-    { 
-      name: 'Hair Fixing and Beauty Life', 
+      name: 'MMDA Arumbakam', 
       address: 'New Hair Life, 1st Floor, Girija Appartment, 50-FF2, Jawaharlal Nehru Salai, near MMDA, Signal, Chennai.' 
     },
     { 
       name: 'Tambaram', 
       address: 'New Hair Life Hair Fixing, Old no27, 1st floor, Gandhi Rd, opp. to Punjab national bank, West Tambaram, Tambaram, Chennai.' 
+    },
+    { 
+      name: 'Salem', 
+      address: 'New Hair Life, 2nd Floor, 5/3, Manivannan Rd, opp. to New Bus Stand Road, near Lena Photo Studio, Gokul Nagar, Swarnapuri, Salem.' 
     },
     { 
       name: 'Puducherry', 
@@ -26,6 +26,10 @@ export default function GlobalPresence() {
     {
       name: 'Hosur',
       address: '2/30 1STfloor, susheela complex, opposite GRT, Bangalore By Pass Rd, above Sri gokulam paint, Hosur, Tamil Nadu 635109.'
+    },
+    {
+      name: 'Avadi',
+      address: 'JSK Complex 43CV+5V4, Anna St, Gandhi Nagar, Avadi, Tamil Nadu 600054.'
     }
   ];
 
@@ -74,7 +78,7 @@ export default function GlobalPresence() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl text-center max-w-md mx-4">
                 <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                  6 Branches Across South India
+                  7 Branches Across Tamil Nadu & Puducherry
                 </h3>
                 <p className="text-neutral-600 mb-6">
                   Experience world-class hair fixing services at any of our convenient locations

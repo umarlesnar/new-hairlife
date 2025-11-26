@@ -28,7 +28,7 @@ export default function VideoGallery() {
           {videos.map((video) => (
             <div key={video.id} className="group cursor-pointer">
               <div 
-                className="relative aspect-square overflow-hidden bg-black shadow-lg"
+                className="relative aspect-square overflow-hidden bg-black shadow-lg rounded-xl"
                 onClick={() => setSelectedVideo(video.src)}
               >
                 {/* Since we don't have separate thumbnail images, we use the video itself as a thumbnail (muted, paused) */}

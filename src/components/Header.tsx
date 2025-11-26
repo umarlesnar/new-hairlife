@@ -8,6 +8,7 @@ export default function Header() {
 
   const navItems = [
     { label: 'About Us', path: '/about' },
+    { label: 'Hair Fixing', path: '/hair-fixing' }, // Added Link
     { label: 'Photo Gallery', path: '/photo-gallery' },
     { label: 'Video Gallery', path: '/video-gallery' },
     { label: 'FAQ', path: '/faq' },
@@ -61,20 +62,20 @@ export default function Header() {
       {/* Main Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-4">
             {/* Logo Section - Left */}
-            <div className="flex-shrink-0 w-48">
-              <Link to="/" className="flex items-center gap-2">
+            <div className="flex-shrink-0">
+              <Link to="/" className="flex items-center gap-3">
                 <img src="/logo/logo.jpeg" alt="New Hair Life" className="w-12 h-12 object-cover" />
                 <div>
                   <div
-                    className="text-[#202A5B] font-bold text-xl leading-tight"
+                    className="text-[#202A5B] font-bold text-xl leading-tight whitespace-nowrap"
                     style={{ fontFamily: '"Cinzel", serif' }}
                   >
                     New Hair Life
                   </div>
-                  <div className="text-xs text-gray-600">
-                    Restore Your Confidence
+                  <div className="text-xs text-gray-600 whitespace-nowrap font-medium tracking-wider">
+                    RESTORE YOUR CONFIDENCE
                   </div>
                 </div>
               </Link>
@@ -86,7 +87,7 @@ export default function Header() {
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="text-[#202A5B] hover:text-[#B78F59] transition-colors text-sm font-medium"
+                  className="text-[#202A5B] hover:text-[#B78F59] transition-colors text-sm font-medium whitespace-nowrap"
                 >
                   {item.label}
                 </Link>
@@ -94,10 +95,10 @@ export default function Header() {
             </nav>
 
             {/* CTA Button - Right */}
-            <div className="hidden lg:flex justify-end w-48">
+            <div className="hidden lg:flex justify-end flex-shrink-0">
               <Link 
                 to="/contact"
-                className="bg-[#B78F59] text-white px-6 py-2 rounded-md hover:bg-[#202A5B] transition-colors font-medium"
+                className="bg-[#B78F59] text-white px-6 py-2 rounded-md hover:bg-[#202A5B] transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us
               </Link>

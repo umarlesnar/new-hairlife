@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   const quickLinks = [
     { label: 'About Us', path: '/about' },
+    { label: 'Hair Fixing', path: '/hair-fixing' },
     { label: 'Photo Gallery', path: '/photo-gallery' },
     { label: 'Video Gallery', path: '/video-gallery' },
     { label: 'FAQ', path: '/faq' },
@@ -26,7 +27,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-neutral-900 text-white">
+    <footer className="bg-[#202A5B] text-white">
       <div className="max-w-7xl mx-auto px-4 pt-16 pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
@@ -47,7 +48,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Transform your look and restore your confidence with South India's premier non-surgical hair replacement center.
+              Transform your look and restore your confidence with Tamil Nadu's premier non-surgical hair replacement center.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => {
