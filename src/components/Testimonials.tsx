@@ -1,31 +1,28 @@
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, User } from 'lucide-react';
 import { useState } from 'react';
 
 const testimonials = [
   {
     name: "Kumar Vel",
     location: "Chennai, Tamil Nadu",
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400",
-    before: "https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400",
-    after: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400",
+    before: "/client/1-before.jpg",
+    after: "/client/1-after.jpg",
     quote: "Life-changing experience! The natural look and feel exceeded my expectations. I feel confident again.",
     rating: 5
   },
   {
     name: "Rajesh Kannan",
     location: "Coimbatore, Tamil Nadu",
-    image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400",
-    before: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400",
-    after: "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=400",
+    before: "/client/2-before.jpg",
+    after: "/client/2-after.jpg",
     quote: "Professional service and amazing results. The team was supportive throughout the entire process.",
     rating: 5
   },
   {
     name: "Arun Prakash",
     location: "Salem, Tamil Nadu",
-    image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400",
-    before: "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=400",
-    after: "https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=400",
+    before: "/client/3-before.jpg",
+    after: "/client/3-after.jpg",
     quote: "Best decision I ever made. The hair looks completely natural and the aftercare service is excellent.",
     rating: 5
   }
@@ -85,11 +82,9 @@ export default function Testimonials() {
                 "{testimonial.quote}"
               </p>
               <div className="flex items-center justify-center gap-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
+                <div className="w-14 h-14 rounded-full bg-gray-200 flex items-center justify-center">
+                  <User className="w-8 h-8 text-gray-500" />
+                </div>
                 <div className="text-left">
                   <p className="font-bold text-[#202A5B]">{testimonial.name}</p>
                   <p className="text-[#939598] text-sm">{testimonial.location}</p>

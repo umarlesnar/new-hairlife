@@ -9,45 +9,45 @@ export default function ContactUs() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             
-            {/* Office 1 */}
+            {/* Chennai Branch */}
             <div className="flex flex-col items-center">
-              <div className="mb-4 text-[#E31E24]">
+              <div className="mb-4 text-[#B78F59]">
                  <MapPin strokeWidth={1.5} className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Office 1</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Chennai Branch</h3>
               <p className="text-gray-600 text-sm leading-relaxed px-4">
-                Ground Floor, Beside Al Maya Super Market Opp. ADCB, Near 4 Points Sheraton Hotel, Khalid Bin Al Waleed Rd, Dubai - United Arab Emirates
+                NEW HAIR LIFE, 2nd floor, 68/53, Valmiki St, opp. Thiruvanmiyur Bus Stand Road, Kamaraj Nagar, Thiruvanmiyur, Chennai.
               </p>
             </div>
 
-            {/* Office 2 */}
+            {/* Salem Branch */}
             <div className="flex flex-col items-center">
-              <div className="mb-4 text-[#E31E24]">
+              <div className="mb-4 text-[#B78F59]">
                 <MapPin strokeWidth={1.5} className="w-10 h-10" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Office 2</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Salem Branch</h3>
               <p className="text-gray-600 text-sm leading-relaxed px-4">
-                Masood Tower, Jafferkhan colony road, Opp Calicut Fashion, Mavoor road, Calicut, Kerala - 673004
+                New Hair Life, 2nd Floor, 5/3, Manivannan Rd, opp. to New Bus Stand Road, near Lena Photo Studio, Gokul Nagar, Swarnapuri, Salem.
               </p>
             </div>
 
             {/* Call Us */}
             <div className="flex flex-col items-center">
-              <div className="mb-4 text-[#E31E24]">
-                <Mail strokeWidth={1.5} className="w-10 h-10" />
+              <div className="mb-4 text-[#B78F59]">
+                <Phone strokeWidth={1.5} className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Call Us</h3>
-              <p className="text-gray-600 text-sm mb-1">India : +91 9287 222 333</p>
-              <p className="text-gray-600 text-sm">Dubai : +971 50 6767 312</p>
+              <p className="text-gray-600 text-sm mb-1">Chennai: +91 96777 30152</p>
+              <p className="text-gray-600 text-sm">Salem: +91 99446 18228</p>
             </div>
 
             {/* Mail Us */}
             <div className="flex flex-col items-center">
-              <div className="mb-4 text-[#E31E24]">
-                <Phone strokeWidth={1.5} className="w-10 h-10" />
+              <div className="mb-4 text-[#B78F59]">
+                <Mail strokeWidth={1.5} className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Mail Us</h3>
-              <p className="text-gray-600 text-sm">contact@hairfixing.com</p>
+              <p className="text-gray-600 text-sm">contact@newhairlife.com</p>
             </div>
 
           </div>
@@ -76,14 +76,14 @@ export default function ContactUs() {
                   <input 
                     type="text" 
                     placeholder="Name" 
-                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#E31E24] transition-colors bg-transparent placeholder-gray-500"
+                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#B78F59] transition-colors bg-transparent placeholder-gray-500"
                   />
                 </div>
                 <div className="group">
                   <input 
                     type="tel" 
                     placeholder="Phone Number" 
-                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#E31E24] transition-colors bg-transparent placeholder-gray-500"
+                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#B78F59] transition-colors bg-transparent placeholder-gray-500"
                   />
                 </div>
               </div>
@@ -93,14 +93,14 @@ export default function ContactUs() {
                   <input 
                     type="email" 
                     placeholder="Email" 
-                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#E31E24] transition-colors bg-transparent placeholder-gray-500"
+                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#B78F59] transition-colors bg-transparent placeholder-gray-500"
                   />
                 </div>
                 <div className="group">
                   <input 
                     type="text" 
                     placeholder="Subject" 
-                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#E31E24] transition-colors bg-transparent placeholder-gray-500"
+                    className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#B78F59] transition-colors bg-transparent placeholder-gray-500"
                   />
                 </div>
               </div>
@@ -109,14 +109,14 @@ export default function ContactUs() {
                 <textarea 
                   placeholder="Message" 
                   rows={4}
-                  className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#E31E24] transition-colors bg-transparent placeholder-gray-500 resize-none"
+                  className="w-full border-b border-gray-300 py-3 focus:outline-none focus:border-[#B78F59] transition-colors bg-transparent placeholder-gray-500 resize-none"
                 ></textarea>
               </div>
 
               <div className="pt-4">
                 <button 
                   type="submit" 
-                  className="bg-[#202A5B] text-white px-8 py-3 rounded text-sm font-medium hover:bg-[#E31E24] transition-colors"
+                  className="bg-[#202A5B] text-white px-8 py-3 rounded text-sm font-medium hover:bg-[#B78F59] transition-colors"
                 >
                   SEND MESSAGE
                 </button>

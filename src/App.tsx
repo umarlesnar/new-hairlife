@@ -14,6 +14,7 @@ import PhotoGallery from './pages/PhotoGallery';
 import VideoGallery from './pages/VideoGallery';
 import FAQ from './pages/FAQ';
 import OurBranches from './pages/OurBranches';
+import ContactUs from './pages/ContactUs';
 
 function Home() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/video-gallery" element={<VideoGallery />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/branches" element={<OurBranches />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
       </div>

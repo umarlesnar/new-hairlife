@@ -1,4 +1,4 @@
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -22,19 +22,23 @@ export default function Header() {
 
   return (
     <>
-      <div className="bg-[#202A5B] text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
-          <div className="flex items-center gap-4 flex-wrap">
-            <span className="flex items-center gap-1">
-              <Phone className="w-3 h-3" />
-              Chennai: +91 9876 543 210
+      {/* Top Bar Section */}
+      <div className="bg-[#1a1a1a] text-white py-2 px-4 text-sm font-medium">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-end items-center gap-4 md:gap-8">
+          {/* Phone Numbers */}
+          <div className="flex items-center gap-6">
+            <span className="tracking-wide">
+              <span className="text-[#B78F59] mr-1">Chennai :</span>
+              +91 96777 30152
             </span>
-            <span className="flex items-center gap-1">
-              <Phone className="w-3 h-3" />
-              Coimbatore: +91 9876 543 214
+            <span className="tracking-wide">
+              <span className="text-[#B78F59] mr-1">Salem :</span>
+              +91 99446 18228
             </span>
           </div>
-          <div className="flex gap-3">
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-4 md:border-l md:border-gray-700 md:pl-6">
             {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
@@ -43,7 +47,7 @@ export default function Header() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#B78F59] transition-colors"
+                  className="text-white hover:text-[#B78F59] transition-colors"
                   aria-label={social.label}
                 >
                   <Icon className="w-4 h-4" />
@@ -54,25 +58,30 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Main Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <img src="/logo/logo.jpeg" alt="New Hair Life" className="w-12 h-12 object-cover" />
-              <div>
-                <div
-                  className="text-[#202A5B] font-bold text-xl leading-tight"
-                  style={{ fontFamily: '"Cinzel", serif' }}
-                >
-                  New Hair Life
+            {/* Logo Section - Left */}
+            <div className="flex-shrink-0 w-48">
+              <Link to="/" className="flex items-center gap-2">
+                <img src="/logo/logo.jpeg" alt="New Hair Life" className="w-12 h-12 object-cover" />
+                <div>
+                  <div
+                    className="text-[#202A5B] font-bold text-xl leading-tight"
+                    style={{ fontFamily: '"Cinzel", serif' }}
+                  >
+                    New Hair Life
+                  </div>
+                  <div className="text-xs text-gray-600">
+                    Restore Your Confidence
+                  </div>
                 </div>
-                <div className="text-xs text-gray-600">
-                  Restore Your Confidence
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            <nav className="hidden lg:flex items-center gap-6">
+            {/* Navigation - Center */}
+            <nav className="hidden lg:flex items-center justify-center flex-1 gap-8">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -82,11 +91,19 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <button className="bg-[#B78F59] text-white px-6 py-2 rounded-md hover:bg-[#202A5B] transition-colors font-medium">
-                Contact Us
-              </button>
             </nav>
 
+            {/* CTA Button - Right */}
+            <div className="hidden lg:flex justify-end w-48">
+              <Link 
+                to="/contact"
+                className="bg-[#B78F59] text-white px-6 py-2 rounded-md hover:bg-[#202A5B] transition-colors font-medium"
+              >
+                Contact Us
+              </Link>
+            </div>
+
+            {/* Mobile Menu Button */}
             <button
               className="lg:hidden text-[#202A5B]"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -95,6 +112,7 @@ export default function Header() {
             </button>
           </div>
 
+          {/* Mobile Menu Dropdown */}
           {isMenuOpen && (
             <nav className="lg:hidden mt-4 pb-4 flex flex-col gap-3">
               {navItems.map((item) => (
@@ -107,9 +125,13 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <button className="bg-[#B78F59] text-white px-6 py-3 rounded-md hover:bg-[#202A5B] transition-colors font-medium w-full mt-2">
+              <Link 
+                to="/contact"
+                className="bg-[#B78F59] text-white px-6 py-3 rounded-md hover:bg-[#202A5B] transition-colors font-medium w-full mt-2 text-center block"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact Us
-              </button>
+              </Link>
             </nav>
           )}
         </div>

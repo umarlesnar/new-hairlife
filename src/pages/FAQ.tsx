@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -35,8 +36,8 @@ export default function FAQ() {
     <div className="min-h-screen bg-neutral-50 pt-32 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-neutral-900 mb-4">Frequently Asked Questions</h1>
-          <div className="w-20 h-1 bg-amber-700 mx-auto mb-6"></div>
+          <h1 className="text-5xl font-bold text-[#202A5B] mb-4">Frequently Asked Questions</h1>
+          <div className="w-20 h-1 bg-[#B78F59] mx-auto mb-6"></div>
           <p className="text-neutral-600 text-lg">Find answers to common questions about our services</p>
         </div>
 
@@ -45,11 +46,11 @@ export default function FAQ() {
             <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-amber-50 transition-colors"
+                className="w-full px-6 py-4 flex items-center justify-between hover:bg-[#B78F59]/5 transition-colors"
               >
-                <span className="text-lg font-semibold text-neutral-900 text-left">{faq.question}</span>
+                <span className="text-lg font-semibold text-[#202A5B] text-left">{faq.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-amber-700 transition-transform flex-shrink-0 ${
+                  className={`w-5 h-5 text-[#B78F59] transition-transform flex-shrink-0 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
@@ -64,11 +65,14 @@ export default function FAQ() {
         </div>
 
         <div className="mt-16 bg-white rounded-lg shadow-lg p-8 text-center">
-          <h2 className="text-2xl font-bold text-neutral-900 mb-4">Still have questions?</h2>
+          <h2 className="text-2xl font-bold text-[#202A5B] mb-4">Still have questions?</h2>
           <p className="text-neutral-600 mb-6">Contact us for a free consultation with our experts</p>
-          <button className="bg-amber-700 text-white px-8 py-3 rounded-md hover:bg-amber-800 transition-colors font-medium">
+          <Link 
+            to="/contact"
+            className="inline-block bg-[#B78F59] text-white px-8 py-3 rounded-md hover:bg-[#202A5B] transition-colors font-medium"
+          >
             Get in Touch
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -4,19 +4,19 @@ import { useState } from 'react';
 const products = [
   {
     name: "Premium Leave-On Conditioner",
-    image: "https://images.pexels.com/photos/3738355/pexels-photo-3738355.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://i.pinimg.com/1200x/86/55/55/86555551bc25376aa2001ae3c71e306f.jpg",
     description: "Helps dry hair to feel wet, non-sticky, maximum manageability and softness. This pleasant-smelling spray protects hair from heat.",
     color: "from-emerald-400 to-emerald-600"
   },
   {
     name: "Hair Repair Conditioner",
-    image: "https://images.pexels.com/photos/4041279/pexels-photo-4041279.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://i.pinimg.com/736x/9b/53/fb/9b53fbd9d6ca1d82b2fde11fb2b4828c.jpg",
     description: "A consistent blend of organic ingredients that will leave your hair feeling smooth as silk while kicking tangles to the curb.",
     color: "from-[#B78F59] to-[#202A5B]"
   },
   {
     name: "Nourishing Hair Serum",
-    image: "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://i.pinimg.com/1200x/56/e1/47/56e147f6f3f69d7c70c9b959feff9076.jpg",
     description: "Advanced formula for maximum shine and protection. Keeps your hair looking natural and feeling soft throughout the day.",
     color: "from-sky-400 to-sky-600"
   }

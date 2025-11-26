@@ -5,17 +5,17 @@ const slides = [
   {
     title: "The perfect solution to your embarrassment",
     subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
-    image: "https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    image: "https://images.pexels.com/photos/34890796/pexels-photo-34890796.jpeg"
   },
   {
     title: "Transform Your Appearance",
     subtitle: "Experience world-class non-surgical hair fixing technology.",
-    image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    image: "https://www.tiege.com/cdn/shop/articles/adjusting-tie-in-mirror.jpg?v=1588038178"
   },
   {
     title: "Natural Looking Results",
     subtitle: "100% natural appearance with Canadian technology.",
-    image: "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    image: "https://www.shutterstock.com/image-photo/back-view-male-head-before-260nw-1739791316.jpg"
   }
 ];
 
@@ -41,19 +41,23 @@ export default function Hero() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#202A5B]/90 to-[#202A5B]/40 z-10" />
+          {/* Adjusted gradient to be clearer: Lighter start and fades to transparent */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#202A5B]/80 via-[#202A5B]/20 to-transparent z-10" />
+          
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            /* Added object-top to ensure heads/top sections are visible */
+            className="w-full h-full object-cover object-top"
           />
+          
           <div className="absolute inset-0 z-20 flex items-center">
             <div className="max-w-7xl mx-auto px-4 w-full">
               <div className="max-w-2xl text-white">
-                <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
                   {slide.title}
                 </h2>
-                <p className="text-xl md:text-2xl mb-8 text-gray-100">
+                <p className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-sm">
                   {slide.subtitle}
                 </p>
                 <button className="bg-[#B78F59] text-white px-8 py-4 rounded-md hover:bg-[#202A5B] transition-all transform hover:scale-105 font-medium text-lg shadow-xl">
