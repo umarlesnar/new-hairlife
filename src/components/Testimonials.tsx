@@ -5,24 +5,24 @@ const testimonials = [
   {
     name: "Kumar Vel",
     location: "Chennai, Tamil Nadu",
-    before: "/client/1-before.jpg",
-    after: "/client/1-after.jpg",
+    before: "/client/1-before.png",
+    after: "/client/1-after.png",
     quote: "Life-changing experience! The natural look and feel exceeded my expectations. I feel confident again.",
     rating: 5
   },
   {
     name: "Rajesh Kannan",
     location: "Coimbatore, Tamil Nadu",
-    before: "/client/2-before.jpg",
-    after: "/client/2-after.jpg",
+    before: "/client/2-before.png",
+    after: "/client/2-after.png",
     quote: "Professional service and amazing results. The team was supportive throughout the entire process.",
     rating: 5
   },
   {
     name: "Arun Prakash",
     location: "Salem, Tamil Nadu",
-    before: "/client/3-before.jpg",
-    after: "/client/3-after.jpg",
+    before: "/client/3-before.png",
+    after: "/client/3-after.png",
     quote: "Best decision I ever made. The hair looks completely natural and the aftercare service is excellent.",
     rating: 5
   }

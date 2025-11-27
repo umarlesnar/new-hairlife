@@ -5,17 +5,17 @@ const slides = [
   {
     title: "The perfect solution to your embarrassment",
     subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
-    image: "/hero/1.jpg"
+    image: "/hero/1.png"
   },
   {
     title: "Transform Your Appearance",
     subtitle: "Experience world-class non-surgical hair fixing technology.",
-    image: "/hero/2.jpg"
+    image: "/hero/2.png"
   },
   {
     title: "Natural Looking Results",
     subtitle: "100% natural appearance with Canadian technology.",
-    image: "/hero/3.jpg"
+    image: "/hero/3.png"
   }
 ];
 

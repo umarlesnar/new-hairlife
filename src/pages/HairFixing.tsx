@@ -48,7 +48,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage }: { beforeImage: string, a
   return (
     <div 
       ref={containerRef}
-      className="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-xl cursor-ew-resize select-none shadow-2xl"
+      className="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[3/4] overflow-hidden rounded-xl cursor-ew-resize select-none shadow-2xl"
       onMouseDown={handleMouseDown}
       onTouchStart={handleMouseDown}
     >
@@ -56,7 +56,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage }: { beforeImage: string, a
       <img 
         src={afterImage} 
         alt="After" 
-        className="absolute inset-0 w-full h-full object-cover" 
+        className="absolute inset-0 w-full h-full object-fill" 
       />
       <div className="absolute bottom-4 right-4 bg-white/90 px-3 py-1 rounded text-sm font-bold text-[#202A5B] z-10">
         After
@@ -66,7 +66,7 @@ const BeforeAfterSlider = ({ beforeImage, afterImage }: { beforeImage: string, a
       <img 
         src={beforeImage} 
         alt="Before" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-center"
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }} 
       />
       <div 
@@ -97,16 +97,16 @@ export default function HairFixing() {
 
   const transformations = [
     {
-      before: "/client/1-before.jpg",
-      after: "/client/1-after.jpg"
+      before: "/client/1-before.png",
+      after: "/client/1-after.png"
     },
     {
-      before: "/client/2-before.jpg",
-      after: "/client/2-after.jpg"
+      before: "/client/2-before.png",
+      after: "/client/2-after.png"
     },
     {
-      before: "/client/3-before.jpg",
-      after: "/client/3-after.jpg"
+      before: "/client/3-before.png",
+      after: "/client/3-after.png"
     }
   ];
 
