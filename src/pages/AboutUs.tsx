@@ -43,12 +43,12 @@ export default function AboutUs() {
       {/* Why Choose Us Section (Carousel) */}
       <WhyChooseUs />
 
-      {/* Vision & Mission Section - 3 Column Layout */}
+      {/* Vision & Mission Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             
-            {/* Left Column: Vision Text Top, Image Bottom */}
+            {/* Left Column: Vision */}
             <div className="flex flex-col gap-6">
               <div>
                 <h2 className="text-3xl font-bold text-[#202A5B] mb-4">
@@ -67,7 +67,7 @@ export default function AboutUs() {
               </div>
             </div>
 
-            {/* Center Column: Tall Portrait Image */}
+            {/* Center Column: Tall Portrait */}
             <div className="h-full min-h-[500px] rounded-2xl overflow-hidden shadow-2xl relative group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#202A5B]/50 to-transparent z-10"></div>
               <img 
@@ -77,7 +77,7 @@ export default function AboutUs() {
               />
             </div>
 
-            {/* Right Column: Image Top, Mission Text Bottom */}
+            {/* Right Column: Mission */}
             <div className="flex flex-col gap-6">
               <div className="rounded-2xl overflow-hidden shadow-lg h-64 group order-1">
                 <img 
@@ -96,6 +96,41 @@ export default function AboutUs() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Team Section - Added Images from Team Folder */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#202A5B] mb-4">
+              Meet Our Expert Team
+            </h2>
+            <div className="w-20 h-1 bg-[#B78F59] mx-auto mb-6"></div>
+            <p className="text-gray-600 text-lg">
+              Discover the Professionals Behind Our Success
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center justify-center">
+            {/* Team Image 1 */}
+            <div className="rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="/team/1.png" 
+                alt="Expert Team Members" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            
+            {/* Team Image 2 */}
+            <div className="rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+              <img 
+                src="/team/2.png" 
+                alt="Our Team Group" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

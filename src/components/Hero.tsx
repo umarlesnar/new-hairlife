@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react';
 const slides = [
   {
     title: "The perfect solution to your embarrassment",
-    subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
-    image: "/hero/1.png"
+    subtitle: "{{ }} ",
+    // subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
+    image: "/hero/4.jpeg"
   },
   {
     title: "Transform Your Appearance",
     subtitle: "Experience world-class non-surgical hair fixing technology.",
-    image: "/hero/2.png"
+    image: "/hero/1.png"
   },
   {
     title: "Natural Looking Results",
@@ -42,7 +43,7 @@ export default function Hero() {
           }`}
         >
           {/* Adjusted gradient to be clearer: Lighter start and fades to transparent */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#202A5B]/80 via-[#202A5B]/20 to-transparent z-10" />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-[#202A5B]/80 via-[#202A5B]/20 to-transparent z-10" /> */}
           
           <img
             src={slide.image}

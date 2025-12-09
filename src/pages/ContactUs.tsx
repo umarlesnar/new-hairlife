@@ -51,7 +51,7 @@ export default function ContactUs() {
 
               <Link 
                 to="/branches"
-                className="flex items-start gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer block"
+                className="flex items-start gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
               >
                 <div className="text-[#B78F59]">
                   <MapPin strokeWidth={1.5} className="w-6 h-6" />

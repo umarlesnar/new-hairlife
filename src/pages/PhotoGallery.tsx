@@ -2,9 +2,9 @@ export default function PhotoGallery() {
   // Using the specific images available in your public/gallery folder
   const images = [
     'img1.png', 'img2.png', 'img3.png', 'img4.png', 
-    'img5.png', 'img6.png', 'img7.png', 'img8.jpeg', 
-    'img9.jpeg', 'img10.jpeg', 'img11.jpeg', 'img12.jpeg', 
-    'img13.jpeg', 'img14.jpeg'
+    'img5.png', 'img6.png', 'img7.png', 'img8.png', 
+    'img9.png', 'img11.jpeg', 'img12.jpeg', 'img13.jpg', 
+    'img14.jpg', 'img15.jpg'
   ];
 
   return (

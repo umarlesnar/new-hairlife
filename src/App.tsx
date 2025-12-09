@@ -9,6 +9,7 @@ import News from './components/News';
 import ContactForm from './components/ContactForm';
 import GlobalPresence from './components/GlobalPresence';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import AboutUs from './pages/AboutUs';
 import PhotoGallery from './pages/PhotoGallery';
 import VideoGallery from './pages/VideoGallery';
@@ -48,6 +49,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
+        <ScrollToTop />
       </div>
     </Router>
   );

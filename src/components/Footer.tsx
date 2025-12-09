@@ -12,12 +12,27 @@ export default function Footer() {
     { label: 'Our Branches', path: '/branches' }
   ];
 
-  const services = [
-    'Non-Surgical Hair Fixing',
-    'Hair Consultation',
-    'After-Care Services',
-    'Hair Products',
-    'Branch Locator'
+  const servicesStructure = [
+    {
+      category: "Non-Surgical Hair Replacement",
+      items: [
+        "Non-surgical Hair Replacement", "Hair Fixing", "Hair Bonding", "Hair Weaving", 
+        "Hair Patch Application", "Natural Men's Hair Patch", "100% Natural Hair Patch", 
+        "Natural Men's Hair Toupee"
+      ]
+    },
+    {
+      category: "Hair Patch & Wig Solutions",
+      items: ["Human Hair Patch", "Human Hair Wig", "Men's Hair Wig"]
+    },
+    {
+      category: "Hair Extension Services",
+      items: ["Hair Extensions"]
+    },
+    {
+      category: "Hair Glue / Adhesive Services",
+      items: []
+    }
   ];
 
   const socialLinks = [
@@ -87,18 +102,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services - Updated to detailed list */}
           <div>
-            <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-[#B78F59] inline-block pb-1">Services</h4>
-            <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service}>
-                  <span className="text-gray-400 text-sm hover:text-white transition-colors cursor-default block">
-                    {service}
-                  </span>
-                </li>
+            <h4 className="text-lg font-bold mb-6 text-white border-b-2 border-[#B78F59] inline-block pb-1">Our Services</h4>
+            <div className="space-y-6">
+              {servicesStructure.map((section, idx) => (
+                <div key={idx}>
+                  <h5 className="text-[#B78F59] text-xs font-bold uppercase mb-2">{section.category}</h5>
+                  <ul className="space-y-1">
+                    {section.items.map((item, i) => (
+                      <li key={i}>
+                        <Link to="/hair-fixing" className="text-gray-400 text-xs hover:text-white transition-colors block">
+                          • {item}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
 
           {/* Contact Info */}
