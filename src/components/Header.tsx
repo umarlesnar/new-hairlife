@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // For mobile menu toggling
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const servicesStructure = [
     {
@@ -48,25 +48,28 @@ export default function Header() {
   return (
     <>
       {/* Top Bar Section */}
-      <div className="bg-[#1a1a1a] text-white py-2 px-4 text-sm font-medium">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
-          {/* Branch Names */}
-          <div className="flex items-center gap-2 md:gap-4 flex-wrap justify-center md:justify-start text-xs md:text-sm">
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default px-2">Tambaram</span>
-            <span className="text-gray-600">•</span>
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default px-2">MMDA (Arumbakkam)</span>
-            <span className="text-gray-600">•</span>
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default px-2">Thiruvanmiyur</span>
-            <span className="text-gray-600 hidden md:inline">•</span>
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default hidden md:inline px-2">Salem</span>
-            <span className="text-gray-600 hidden md:inline">•</span>
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default hidden md:inline px-2">Hosur</span>
-            <span className="text-gray-600 hidden md:inline">•</span>
-            <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default hidden md:inline px-2">Puducherry</span>
+      <div className="bg-[#1a1a1a] text-white py-2 px-0 md:px-4 text-sm font-medium">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 md:gap-4">
+          
+          {/* Branch Names - Scrollable on mobile */}
+          <div className="w-full md:w-auto overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div className="flex items-center px-4 md:px-0 gap-2">
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">Tambaram</span>
+              <span className="text-gray-600">•</span>
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">MMDA (Arumbakkam)</span>
+              <span className="text-gray-600">•</span>
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">Thiruvanmiyur</span>
+              <span className="text-gray-600">•</span>
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">Salem</span>
+              <span className="text-gray-600">•</span>
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">Hosur</span>
+              <span className="text-gray-600">•</span>
+              <span className="tracking-wide text-[#B78F59] hover:text-white transition-colors cursor-default">Puducherry</span>
+            </div>
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-4 md:border-l md:border-gray-700 md:pl-6">
+          <div className="flex items-center justify-center gap-4 w-full md:w-auto md:border-l md:border-gray-700 md:pl-6 pb-2 md:pb-0">
             {socialLinks.map((social) => {
               const Icon = social.icon;
               return (
@@ -90,7 +93,7 @@ export default function Header() {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center gap-4">
-            {/* Logo Section - Left */}
+            {/* Logo Section */}
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center gap-3">
                 <img src="/logo/logo.jpeg" alt="New Hair Life" className="w-12 h-12 object-cover" />
@@ -108,10 +111,9 @@ export default function Header() {
               </Link>
             </div>
 
-            {/* Navigation - Center - Desktop */}
+            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center justify-center flex-1 gap-8">
               <Link to="/about" className="text-[#202A5B] hover:text-[#B78F59] transition-colors text-sm font-medium whitespace-nowrap">About Us</Link>
-
               <Link to="/hair-fixing" className="text-[#202A5B] hover:text-[#B78F59] transition-colors text-sm font-medium whitespace-nowrap">Hair Fixing</Link>
               
               {/* Dropdown for Services */}
@@ -120,8 +122,6 @@ export default function Header() {
                   Our Services
                   <ChevronDown className="w-4 h-4" />
                 </button>
-                
-                {/* Dropdown Menu */}
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100 p-6 z-50">
                   <div className="grid grid-cols-2 gap-6">
                     {servicesStructure.map((section, idx) => (
@@ -158,7 +158,7 @@ export default function Header() {
               <Link to="/branches" className="text-[#202A5B] hover:text-[#B78F59] transition-colors text-sm font-medium whitespace-nowrap">Our Branches</Link>
             </nav>
 
-            {/* CTA Button - Right */}
+            {/* CTA Button */}
             <div className="hidden lg:flex justify-end flex-shrink-0">
               <Link 
                 to="/contact"
@@ -208,7 +208,7 @@ export default function Header() {
                               </Link>
                             </li>
                           ))}
-                          {section.items.length === 0 && (
+                           {section.items.length === 0 && (
                              <li>
                                 <Link 
                                   to="/hair-fixing" 

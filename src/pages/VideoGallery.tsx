@@ -4,12 +4,11 @@ import { useState } from 'react';
 export default function VideoGallery() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-  // Using the available videos in public/video/
   const videos = [
     { id: 1, src: '/video/video1.mp4', title: 'Hair Fixing Transformation' },
     { id: 2, src: '/video/video2.mp4', title: 'Client Testimonial' },
-    { id: 3, src: '/video/video1.mp4', title: 'Expert Consultation' }, // Reusing for grid demo
-    { id: 4, src: '/video/video2.mp4', title: 'Natural Look Results' }, // Reusing for grid demo
+    { id: 3, src: '/video/video3.mp4', title: 'Expert Consultation' }, 
+    { id: 4, src: '/video/video4.mp4', title: 'Natural Look Results' }, 
   ];
 
   return (

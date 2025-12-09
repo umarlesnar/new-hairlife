@@ -4,7 +4,8 @@ export default function PhotoGallery() {
     'img1.png', 'img2.png', 'img3.png', 'img4.png', 
     'img5.png', 'img6.png', 'img7.png', 'img8.png', 
     'img9.png', 'img11.jpeg', 'img12.jpeg', 'img13.jpg', 
-    'img14.jpg', 'img15.jpg'
+    'img14.jpg', 'img15.jpg', 'img16.jpeg', 'img17.jpeg', 
+    'img18.jpeg', 'img19.jpeg', 'img20.jpeg', 'img21.jpeg',
   ];
 
   return (

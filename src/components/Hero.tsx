@@ -1,23 +1,26 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const slides = [
   {
     title: "The perfect solution to your embarrassment",
     subtitle: "{{ }} ",
     // subtitle: "Discover the perfect hair fixing solution for a natural, confident look.",
-    image: "/hero/4.jpeg"
+    image: "/hero/4.jpeg",
+    mobileImage: "/hero/4-mobile.png",
   },
   {
     title: "Transform Your Appearance",
     subtitle: "Experience world-class non-surgical hair fixing technology.",
-    image: "/hero/1.png"
+    image: "/hero/1.png",
+    mobileImage: "/hero/1-mobile.png",
   },
   {
     title: "Natural Looking Results",
     subtitle: "100% natural appearance with Canadian technology.",
-    image: "/hero/3.png"
-  }
+    image: "/hero/3.png",
+    mobileImage: "/hero/3-mobile.png",
+  },
 ];
 
 export default function Hero() {
@@ -31,7 +34,8 @@ export default function Hero() {
   }, []);
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  const prevSlide = () =>
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <section className="relative h-[600px] overflow-hidden">
@@ -39,26 +43,28 @@ export default function Hero() {
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
+            index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
         >
+          <picture>
+            <source media="(max-width: 768px)" srcSet={slide.mobileImage} />
+            <img
+              src={slide.image}
+              alt={slide.title}
+              /* Added object-top to ensure heads/top sections are visible */
+              className="w-full h-full object-cover object-top"
+            />
+          </picture>
           {/* Adjusted gradient to be clearer: Lighter start and fades to transparent */}
           {/* <div className="absolute inset-0 bg-gradient-to-r from-[#202A5B]/80 via-[#202A5B]/20 to-transparent z-10" /> */}
-          
-          <img
-            src={slide.image}
-            alt={slide.title}
-            /* Added object-top to ensure heads/top sections are visible */
-            className="w-full h-full object-cover object-top"
-          />
-          
+
           <div className="absolute inset-0 z-20 flex items-center">
             <div className="max-w-7xl mx-auto px-4 w-full">
               <div className="max-w-2xl text-white">
                 <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-md">
                   {slide.title}
                 </h2>
-                <p className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-sm">
+                <p className="hidden md:block text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-sm">
                   {slide.subtitle}
                 </p>
                 <button className="bg-[#B78F59] text-white px-8 py-4 rounded-md hover:bg-[#202A5B] transition-all transform hover:scale-105 font-medium text-lg shadow-xl">
@@ -89,7 +95,7 @@ export default function Hero() {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
-              index === currentSlide ? 'bg-[#B78F59] w-8' : 'bg-white/50'
+              index === currentSlide ? "bg-[#B78F59] w-8" : "bg-white/50"
             }`}
           />
         ))}
